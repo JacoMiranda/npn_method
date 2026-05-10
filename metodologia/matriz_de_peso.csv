@@ -1,0 +1,11 @@
+Procedimento Clinico,Peso_T1,Peso_T2,Peso_T3,Peso_T0,Categoria
+Consulta Assistencial,2.0,2.0,2.0,0.0,Consulta
+Teste Rápido de Sífilis,3.0,1.5,1.0,0.0,Rastreio
+Teste Rápido de HIV,3.0,1.5,1.0,0.0,Rastreio
+Exame de Urina,2.0,2.0,2.0,0.0,Laboratorial
+Glicemia em Jejum,2.5,1.0,1.0,0.0,Laboratorial
+Ultrassonografia Obstétrica,2.5,2.0,1.5,0.0,Imagem
+Vacina DTPA,0.0,3.0,3.0,0.0,Imunização
+Consulta Puerperal,0.0,0.0,0.0,3.0,Puerpério
+Aferição de Pressão Arterial,1.0,1.0,2.0,0.0,Monitorização
+Avaliação de Peso/IMC,1.0,1.0,1.0,0.0,Monitorização
