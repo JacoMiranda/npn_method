@@ -72,7 +72,10 @@ A **Matriz de Pesos** (Camada 3) foi elaborada e validada mediante o rigor técn
   * Acumula mais de 20 anos de experiência na SEMSA/Manaus, unindo sólida atuação na assistência de Urgência/Emergência com a gestão técnica e formulação de políticas públicas de Saúde da Mulher desde 2014, liderando estratégias de controle de câncer do colo e mama.
 
 * **Gerda Coêlho da Costa** – *Enfermeira (Departamento de Atenção Primária – DAP / Saúde da Mulher)*
-  * Profissional com vasta trajetória na Secretaria Municipal de Saúde de Manaus (SEMSA), atuando diretamente nas áreas de planejamento e execução de ações estratégicas em prol da saúde materno-infantil na Atenção Primária.
+  * Profissional com vasta trajetória na Secretaria Municipal de Saúde de Manaus (SEMSA), atuando diretamente nas áreas de planejamento e execução de ações estratégicas em prol da saúde materno-infantil na Atenção Primária. Referência Técnica do Pré-natal.
+ Curso Enfermagem e Obstetrícia, com Habilitação em Enfermagem de Saúde Pública e Habilitação em Enfermagem Obstétrica.
+Licenciatura em Enfermagem.
+Especialização em Educação Profissional na Área de Saúde: Enfermagem.
 
 ---
 
