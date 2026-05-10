@@ -51,6 +51,21 @@ Para a análise detalhada da coorte de **16.817 gestações**, da performance do
 
 ---
 
+## Autoria e Equipe Especialista
+
+O *framework* metodológico NPN e sua modelagem computacional foram desenvolvidos primariamente por:
+
+* **Jacó Miranda dos Santos** (Autor / Pesquisador Principal)
+  * Doutorando e Mestre em Informática pela Universidade Federal do Amazonas (UFAM), com foco em Inteligência Artificial, Machine Learning e Processamento de Linguagem Natural.
+  * Servidor na Diretoria de Inteligência de Dados da Secretaria Municipal de Saúde (SEMSA/Manaus), atuando no desenvolvimento de algoritmos e sistemas de apoio à decisão em saúde digital para o SUS.
+  * *Lattes: [http://lattes.cnpq.br/8838867187831091](http://lattes.cnpq.br/8838867187831091)* | *GitHub: [JacoMiranda](https://github.com/JacoMiranda/)*
+
+A **Matriz de Pesos** (Camada 3) foi elaborada mediante validação técnica do seguinte comitê de especialistas da SEMSA/Manaus, garantindo a correspondência entre o algoritmo e as diretrizes clínicas reais:
+* **Gerda Coêlho da Costa** e **Lúcia Marques de Freitas** – *Departamento de Atenção Primária (DAP – Saúde da Mulher)*.
+* **Lana de Lourdes Aguiar Lima** – *Ginecologista Obstetra (Subsecretaria de Gestão da Saúde – SUBGS)*.
+
+---
+
 ## Academic Citation & Licensing
 
 Any academic, institutional or commercial use must properly cite the original authorship and repository. The intellectual property is preserved as evidence of primary authorship and methodological evolution. 
