@@ -60,9 +60,19 @@ O *framework* metodológico NPN e sua modelagem computacional foram desenvolvido
   * Servidor na Diretoria de Inteligência de Dados da Secretaria Municipal de Saúde (SEMSA/Manaus), atuando no desenvolvimento de algoritmos e sistemas de apoio à decisão em saúde digital para o SUS.
   * *Lattes: [http://lattes.cnpq.br/8838867187831091](http://lattes.cnpq.br/8838867187831091)* | *GitHub: [JacoMiranda](https://github.com/JacoMiranda/)*
 
-A **Matriz de Pesos** (Camada 3) foi elaborada mediante validação técnica do seguinte comitê de especialistas da SEMSA/Manaus, garantindo a correspondência entre o algoritmo e as diretrizes clínicas reais:
-* **Gerda Coêlho da Costa** e **Lúcia Marques de Freitas** – *Departamento de Atenção Primária (DAP – Saúde da Mulher)*.
-* **Lana de Lourdes Aguiar Lima** – *Ginecologista Obstetra (Subsecretaria de Gestão da Saúde – SUBGS)*.
+A **Matriz de Pesos** (Camada 3) foi elaborada e validada mediante o rigor técnico e clínico do seguinte comitê de especialistas, garantindo o alinhamento metodológico com as reais necessidades da linha de frente do SUS e as diretrizes do Ministério da Saúde:
+
+* **Lana de Lourdes Aguiar Lima** – *Médica Ginecologista e Obstetra (Subsecretaria de Gestão da Saúde – SUBGS)*
+  * Mestre em Saúde Perinatal (UFRJ) com vasta experiência em gestão pública de alto nível no SUS.
+  * Atuou como Diretora do Departamento de Saúde Materno Infantil (DSMI) e Coordenadora-Geral de Ciclos da Vida no **Ministério da Saúde**.
+  * Professora de Medicina (UFAM) e membro de Câmaras Técnicas Assessoras Nacionais (Mortalidade Materna, Mielomeningocele, CONITEC). Autora de guias do Ministério da Saúde, como os "Cuidados obstétricos em diabetes mellitus gestacional no Brasil".
+
+* **Lúcia Marques de Freitas** – *Enfermeira Obstetra (Departamento de Atenção Primária – DAP / Saúde da Mulher)*
+  * Especialista em Saúde da Família (UFAM) e Gestão da Clínica no SUS (Sírio Libanês).
+  * Acumula mais de 20 anos de experiência na SEMSA/Manaus, unindo sólida atuação na assistência de Urgência/Emergência com a gestão técnica e formulação de políticas públicas de Saúde da Mulher desde 2014, liderando estratégias de controle de câncer do colo e mama.
+
+* **Gerda Coêlho da Costa** – *Enfermeira (Departamento de Atenção Primária – DAP / Saúde da Mulher)*
+  * Profissional com vasta trajetória na Secretaria Municipal de Saúde de Manaus (SEMSA), atuando diretamente nas áreas de planejamento e execução de ações estratégicas em prol da saúde materno-infantil na Atenção Primária.
 
 ---
 
