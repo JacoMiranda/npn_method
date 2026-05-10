@@ -4,7 +4,7 @@ Este repositório contém a documentação metodológica suplementar, resultados
 
 ## Resumo do Projeto
 
-Algoritmos de aprendizado de máquina aplicados à saúde materno-infantil dependem de variáveis preditoras que capturem a oportunidade temporal dos cuidados clínicos. Este projeto propõe a especificação de **Sensores Virtuais** — instrumentos de medição definidos por software — que sintetizam 67 pontos de observação clínica do cuidado pré-natal em índices contínuos e normalizados, prontos para algoritmos de estratificação de risco gestacional.
+Algoritmos de aprendizado de máquina aplicados à saúde materno-infantil dependem de variáveis preditoras que capturem a oportunidade temporal dos cuidados clínicos. Este projeto propõe a especificação de **Sensores Virtuais** — instrumentos de medição definidos por software — que sintetizam 65 pontos de observação clínica do cuidado pré-natal em índices contínuos e normalizados, prontos para algoritmos de estratificação de risco gestacional.
 
 A metodologia opera em seis camadas:
 1. Padrão esperado de cuidado (QMEVC)
@@ -20,11 +20,11 @@ A metodologia opera em seis camadas:
 
 ## Resultados Empíricos (DUM 2025)
 
-Os resultados referem-se ao recorte de gestações finalizadas com DUM em 2025 na rede da SEMSA/Manaus, avaliadas pela metodologia NPN (Nível de Pré-Natal). O modelo operacionalizou Sensores Virtuais capazes de sintetizar 65 variáveis clínicas em indicadores contínuos de adequação assistencial. 
+Os resultados referem-se ao recorte de gestações finalizadas com DUM em 2025 na rede da SEMSA/Manaus, avaliadas pela metodologia NPN. O modelo operacionalizou Sensores Virtuais capazes de sintetizar dezenas de variáveis clínicas em indicadores contínuos de adequação assistencial. 
 
-Foram analisadas **16.817 gestações**, identificando-se média geral de NPN igual a 2,3 e 19% classificadas como alto risco assistencial. Os Índices de Adequação Trimestral (IAT) apresentaram médias de **25,6% no 1º trimestre, 35,4% no 2º e 39,5% no 3º**, evidenciando aumento progressivo do cuidado ao longo da gestação, porém ainda abaixo do padrão esperado. 
+Para a análise detalhada da coorte de **16.817 gestações**, da performance dos Índices de Adequação Trimestral (IATs), da demografia e das conclusões metodológicas que embasaram os Sensores Virtuais aplicados, consulte o documento completo:
 
-A distribuição do NPN concentrou-se nos níveis 1 a 4, indicando baixa integralidade do acompanhamento pré-natal. Os resultados demonstram potencial da metodologia para monitoramento longitudinal, detecção de sub-registro e estruturação de bases analíticas para modelos supervisionados de risco gestacional.
+👉 **[Ler a Análise Detalhada de Resultados Empíricos (SEMSA/Manaus)](resultados_empiricos.md)**
 
 ### Gráficos de Resultados
 
@@ -38,7 +38,7 @@ A distribuição do NPN concentrou-se nos níveis 1 a 4, indicando baixa integra
 
 - `/img`: Contém o diagrama arquitetural em alta resolução e os gráficos de resultados da aplicação na coorte de 2025.
 - `/metodologia`: Contém a [Matriz de Peso](metodologia/matriz_de_peso.md), detalhando a ponderação utilizada na Camada 3 do modelo para cada um dos procedimentos nos trimestres da gestação.
-- `/app`: Contém uma interface interativa de demonstração (`npn_calculator.py`) construída em Python (Streamlit), que simula o cálculo em tempo real das camadas operacionais (QMEVC, VC, Matriz de Peso e IATs).
+- `/app`: Contém uma interface interativa de demonstração em HTML, Javascript e CSS, que simula o cálculo em tempo real das camadas operacionais (QMEVC, VC, Matriz de Peso e IATs) rodando diretamente no navegador, sem necessidade de servidores. Se você baixar o repositório e abrir localmente, poderá fazer upload do CSV manualmente. Se acessar via GitHub Pages, o carregamento é automático.
 
 ---
 

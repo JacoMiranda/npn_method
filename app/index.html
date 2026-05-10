@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora NPN (Nível de Pré-Natal)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- PapaParse para carregar o CSV dinamicamente -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧮 Calculadora NPN</h1>
+            <p>Simulação das 6 camadas do modelo de Sensores Virtuais para estratificação do cuidado pré-natal.</p>
+        </header>
+
+        <div class="info-banner">
+            <span class="icon">ℹ️</span>
+            <div>
+                <strong>Adaptação Regional Automática</strong>
+                <p>Esta calculadora está consumindo os pesos diretamente do arquivo <code>metodologia/matriz_de_peso.csv</code>. Gestores de outras regiões podem substituir o CSV para adequar o cálculo à realidade e protocolos locais (consenso de especialistas).</p>
+            </div>
+        </div>
+
+        <div class="layout-grid">
+            <!-- Painel de Configurações -->
+            <aside class="sidebar">
+                <div class="card">
+                    <h2>Camada 5: Estrato de Risco</h2>
+                    <label class="radio-label">
+                        <input type="radio" name="risco" value="habitual" checked>
+                        Risco Habitual (Base 4)
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="risco" value="alto">
+                        Alto Risco (Base 6)
+                    </label>
+                </div>
+
+                <div class="card results-card">
+                    <h2>Vetor Final (Sensores)</h2>
+                    
+                    <div class="metric">
+                        <span class="metric-label">NPN Alcançado</span>
+                        <span class="metric-value" id="val-npn-a">0</span>
+                        <span class="metric-sub">Esperado: <span id="val-npn-e">0</span></span>
+                    </div>
+
+                    <div class="metric-group">
+                        <div class="metric-mini">
+                            <span class="metric-label">IAT T1</span>
+                            <span class="metric-value-mini" id="val-iat-t1">0.00</span>
+                        </div>
+                        <div class="metric-mini">
+                            <span class="metric-label">IAT T2</span>
+                            <span class="metric-value-mini" id="val-iat-t2">0.00</span>
+                        </div>
+                        <div class="metric-mini">
+                            <span class="metric-label">IAT T3</span>
+                            <span class="metric-value-mini" id="val-iat-t3">0.00</span>
+                        </div>
+                        <div class="metric-mini">
+                            <span class="metric-label">IAT T0</span>
+                            <span class="metric-value-mini" id="val-iat-t0">0.00</span>
+                        </div>
+                    </div>
+
+                    <div class="metric highlight">
+                        <span class="metric-label">Sensor de Efetividade</span>
+                        <span class="metric-value" id="val-efetividade">0.00</span>
+                        <span class="metric-sub">NPN_a / NPN_e</span>
+                    </div>
+                </div>
+            </aside>
+
+        <!-- Painel Principal de Variáveis do Cuidado -->
+        <main class="main-content">
+            <div class="card">
+                <h2>Camada 2: Variáveis do Cuidado Realizadas (VC)</h2>
+                <p class="subtitle">Selecione os procedimentos realizados. Os pesos estão parametrizados via CSV.</p>
+                
+                <div id="fallback-container" style="display: none; background: #fff3cd; padding: 15px; border-radius: 5px; margin-bottom: 20px; border-left: 5px solid #ffecb5;">
+                    <strong style="color: #856404; display:block; margin-bottom:10px;">⚠️ Modo Offline (Local) Detectado</strong>
+                    <p style="color: #856404; font-size:0.9rem; margin-bottom:10px;">Como você abriu o arquivo diretamente no computador, o navegador bloqueia a leitura automática do CSV (CORS). Para testar, selecione manualmente o arquivo <code>matriz_de_peso.csv</code> (na pasta <code>metodologia</code>):</p>
+                    <input type="file" id="csv-upload" accept=".csv" style="display:block; margin-bottom:10px;">
+                </div>
+
+                <div class="trimestres-grid" id="trimestres-container">
+                    <!-- Gerado via Javascript a partir do CSV -->
+                    <div class="loader">Carregando Matriz de Peso...</div>
+                </div>
+            </div>
+        </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
