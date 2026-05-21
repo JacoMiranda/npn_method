@@ -1,5 +1,6 @@
 # NPN Methodology — Prenatal Virtual Sensor Framework
-
+[![CBIS 2026 Submission](https://shields.io)](https://sbis.org.br)
+[![Framework](https://shields.io)]()
 **Author**: Jacó Miranda  
 **Status**: Closed for Peer Review (CBIS 2026)
 
