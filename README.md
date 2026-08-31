@@ -1,8 +1,8 @@
 # NPN Methodology — Prenatal Virtual Sensor Framework
-[![CBIS 2026 Submission](https://shields.io)](https://sbis.org.br)
+
 [![Framework](https://shields.io)]()
 **Author**: Jacó Miranda  
-**Status**: Closed for Peer Review (CBIS 2026)
+
 
 This repository contains the implementation and methodological documentation of the NPN framework, a virtual sensor methodology for prenatal care adequacy assessment based on weighted clinical indicators.
 
@@ -12,7 +12,13 @@ The methodology synthesizes 65 prenatal clinical observation points into normali
 
 ## Resumo do Projeto (Metodologia NPN)
 
-Algoritmos de aprendizado de máquina aplicados à saúde materno-infantil dependem de variáveis preditoras que capturem a oportunidade temporal dos cuidados clínicos. Este projeto propõe a especificação de **Sensores Virtuais** — instrumentos de medição definidos por software — que sintetizam múltiplos pontos de observação clínica do cuidado pré-natal em índices contínuos e normalizados, prontos para algoritmos de estratificação de risco gestacional.
+Algoritmos de aprendizado de máquina aplicados à saúde materno-infantil dependem de variáveis preditoras capazes de representar não apenas as condições clínicas observadas, mas também a **oportunidade temporal dos cuidados** ao longo do acompanhamento gestacional. Entretanto, os dados representativos do atendimento pré-natal são frequentemente heterogêneos, multidimensionais e distribuídos ao longo do tempo, o que pode dificultar sua utilização direta na construção de modelos de estratificação e predição de risco gestacional.
+
+Nesse contexto, este projeto propõe a especificação de **Sensores Virtuais** — instrumentos de medição definidos por software — destinados a sintetizar diferentes pontos de observação clínica do cuidado pré-natal em **índices contínuos, normalizados e semanticamente interpretáveis**. Os Sensores Virtuais representam uma idealização de parte de uma proposta de doutorado e buscam transformar informações clínicas heterogêneas em uma grandeza escalar simplificada, porém dotada de significado semântico.
+
+Esses sensores podem ser vinculados a **índices, taxas, razões e outras métricas**, permitindo a composição de diferentes dimensões do acompanhamento gestacional em representações mais compactas. Dessa forma, podem atuar como mecanismos de **engenharia de características (feature engineering)** e de **redução da dimensionalidade**, sem necessariamente eliminar a informação semântica associada aos dados de origem.
+
+A proposta busca, portanto, estabelecer uma **camada intermediária entre os dados clínicos brutos e os modelos de aprendizado de máquina**, transformando múltiplas observações em variáveis preditoras mais compactas, comparáveis e semanticamente contextualizadas. Com isso, os Sensores Virtuais podem favorecer a representação de aspectos como **tempo, frequência, cobertura e qualidade do acompanhamento pré-natal**, contribuindo para modelos mais robustos de estratificação e predição de risco gestacional.
 
 A metodologia opera em seis camadas:
 1. Padrão esperado de cuidado (QMEVC)
@@ -86,4 +92,3 @@ Any academic, institutional or commercial use must properly cite the original au
 
 Please refer to the `LICENSE` file for strict academic attribution terms under the MIT framework with an Explicit Citation Clause.
 
-*Repositório criado como anexo técnico-metodológico para avaliação por pares do XXI Congresso Brasileiro de Informática em Saúde (CBIS'26).*
